@@ -96,7 +96,7 @@ python plot_cosedimentation.py --samplePath path/to/sample_1/construct_1/ path/t
 ### Outputs
 
 - Image with the plot of the mean values of the tubulin co-sedimented fraction for each MAP against tubulin concentration, the error bars corresponding to the standard deviations and the fitted curve.
-- CSV file with the estimated dissociation constant (K<sub>d</sub>; in &mu;M) and its standard deviation, the estimated maximal bound fraction and its standard deviation, and the R$^{2}$ of the fitted model for each construct under analysis.
+- CSV file with the estimated dissociation constant (K<sub>d</sub>; in &mu;M) and its standard deviation, the estimated maximal bound fraction and its standard deviation, and the R<sup>2</sup> of the fitted model for each construct under analysis.
 
 The output files are saved in a user-defined folder that has to be defined by typing the path in the terminal once prompted by the script. If only one construct is quantified, then the output files are saved in the folder that is passed as input.
 
