@@ -75,19 +75,19 @@ python plot_cosedimentation.py --help
 The required inputs are a list of paths to the folders storing the data for each construct of interest (specified in the `--samplePath` argument) and the path to the Excel file with the details required for the plot for each construct (i.e. color, name to use in the legend, tubulin concentrations to use; specified in the `--pathToExcel` argument). A template .xlsx file is available in the repository.<br>
 Additional parameters that can be specified are the following:
 
-- `--Kd`: If this is passed, then the estimated K$_{d}$ value will be printed in the legend;
-- `--Kd_round_digits`: How many digits to round the estimated K$_{d}$ value, default is 1. Only for the plot legend;
+- `--Kd`: If this is passed, then the estimated K<sub>d</sub> value will be printed in the legend;
+- `--Kd_round_digits`: How many digits to round the estimated K<sub>d</sub> value, default is 1. Only for the plot legend;
 - `--ext`: File type you wish for saving the plot. Available options: 'svg','png','pdf','tiff', 'jpg', 'jpeg'; the default is PNG.
 
 ### Usage exaples
 
-- Plot two constructs, save plot as .png, no K$_{d}$ indicated in the legend:
+- Plot two constructs, save plot as .png, no K<sub>d</sub> indicated in the legend:
 
 ```shell
 python plot_cosedimentation.py --samplePath path/to/sample_1/construct_1/ path/to/sample_1/construct_2/ --pathToExcel constructs_spec.xlsx
 ```
 
-- Plot two constructs, save as svg, indicate K$_{d}$ in the legend rounded to 1 digit:
+- Plot two constructs, save as svg, indicate K<sub>d</sub> in the legend rounded to 1 digit:
 
 ```shell
 python plot_cosedimentation.py --samplePath path/to/sample_1/construct_1/ path/to/sample_2/construct_1/ --pathToExcel constructs_spec.xlsx –Kd –ext svg
@@ -96,7 +96,7 @@ python plot_cosedimentation.py --samplePath path/to/sample_1/construct_1/ path/t
 ### Outputs
 
 - Image with the plot of the mean values of the tubulin co-sedimented fraction for each MAP against tubulin concentration, the error bars corresponding to the standard deviations and the fitted curve.
-- CSV file with the estimated dissociation constant (K$_{d}$; in $\mu$M) and its standard deviation, the estimated maximal bound fraction and its standard deviation, and the R$^{2}$ of the fitted model for each construct under analysis.
+- CSV file with the estimated dissociation constant (K<sub>d</sub>; in &mu;M) and its standard deviation, the estimated maximal bound fraction and its standard deviation, and the R$^{2}$ of the fitted model for each construct under analysis.
 
 The output files are saved in a user-defined folder that has to be defined by typing the path in the terminal once prompted by the script. If only one construct is quantified, then the output files are saved in the folder that is passed as input.
 
